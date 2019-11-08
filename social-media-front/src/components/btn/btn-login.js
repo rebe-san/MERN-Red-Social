@@ -7,7 +7,9 @@ class LoginButton extends Component {
     render() {
         return (
             <label>
-                <Link to="/feed"><button type="submit" id="button-login" >Inicia sesión</button>    </Link>
+                <Link to="/feed">
+                    <button type="submit" id="button-login" >Inicia sesión</button>
+                </Link>
             </label> 
         )
     }
