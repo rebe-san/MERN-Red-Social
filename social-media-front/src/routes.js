@@ -23,18 +23,10 @@ class App extends Component {
         <Router basename = { window.location.pathname || '' } >
             <Switch >
 
-            <Route exact path = '/'
-            component = { Login }
-            />
-            <Route exact path = '/feed'
-            component = { Feed }
-            />
-            <Route exact path = '/about-us'
-            component = { AboutUs }
-            />
-            <Route exact path = '/profile'
-            component = { Profile }
-            />
+            <Route exact path = '/' component = { Login }/>
+            <Route exact path = '/feed' component = { Feed }/>
+            <Route exact path = '/about-us' component = { AboutUs }/>
+            <Route exact path = '/profile' component = { Profile } />
 
             </Switch> 
         </Router >

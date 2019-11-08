@@ -1,0 +1,64 @@
+nav {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+}
+
+figure {
+    margin-bottom: 0;
+}
+
+button {
+    padding: 0.3rem 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    background: #fd9e25;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #fd9e25 1%, #ff7600 53%, #ff7600 53%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fd9e25 1%, #ff7600 53%, #ff7600 53%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fd9e25 1%, #ff7600 53%, #ff7600 53%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fd9e25', endColorstr='#ff7600', GradientType=0);
+    /* IE6-9 */
+}
+
+#login {
+    background-color: rgb(129, 146, 3);
+    background-attachment: fixed;
+    padding: 2rem 1rem;
+    width: 100vw;
+}
+
+#login form input {
+    width: 30%;
+    border-radius: 0.25rem;
+    padding-left: 0.5rem;
+    border: none;
+}
+
+@media only screen and (min-width: 576px) {
+    #login {
+        width: 50vw;
+    }
+    #login form {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    #login form input {
+        margin-right: 1rem;
+    }
+    #login form label {
+        width: 30%;
+        border-radius: 0.25rem;
+        padding-left: 0.5rem;
+        border: none;
+    }
+    #login form input {
+        width: 100%;
+        padding: 0.5rem 1rem;
+    }
+}

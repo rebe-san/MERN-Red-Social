@@ -4,6 +4,6 @@ import Routes from './routes'
 import * as serviceWorker from './serviceWorker.js';
 
 
-ReactDOM.render( < Routes / > , document.getElementById('root'));
+ReactDOM.render( <Routes/> , document.getElementById('root'));
 
 serviceWorker.unregister();
