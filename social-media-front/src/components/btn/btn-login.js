@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import '../styles.css';
 
 
@@ -6,7 +7,7 @@ class LoginButton extends Component {
     render() {
         return (
             <label>
-                <button type="submit" id="button-login" >Inicia sesión</button>    
+                <Link to="/feed"><button type="submit" id="button-login" >Inicia sesión</button>    </Link>
             </label> 
         )
     }
