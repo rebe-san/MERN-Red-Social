@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+  } from "react-router-dom";
 
-// Home
+// Views
 
-import Login from './views/Login/Login';
+import Login from './views/Login';
+import Feed from './views/Feed';
+import AboutUs from './views/About-us';
+import Profile from './views/Profile';
 
 
 
@@ -11,15 +19,25 @@ class App extends Component {
 
 
     render() {
-        return ( < Router basename = { window.location.pathname || '' } >
+        return ( 
+        <Router basename = { window.location.pathname || '' } >
             <Switch >
 
             <Route exact path = '/'
             component = { Login }
-            /> 
+            />
+            <Route exact path = '/feed'
+            component = { Feed }
+            />
+            <Route exact path = '/about-us'
+            component = { AboutUs }
+            />
+            <Route exact path = '/profile'
+            component = { Profile }
+            />
 
             </Switch> 
-            </Router >
+        </Router >
         )
     };
 }
