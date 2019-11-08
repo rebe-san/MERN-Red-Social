@@ -5,7 +5,7 @@ class LoginForm extends Component {
     render() {
         return (
 
-            <div className='login'>
+            <section className='login'>
                 <form onSubmit={this.handleSubmit}>
                     {/* email field */}
                     <div className='form-group'>
@@ -32,7 +32,7 @@ class LoginForm extends Component {
                     </div>
 
                 </form>
-            </div>
+            </section>
         )
     }
 }
