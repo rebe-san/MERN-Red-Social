@@ -5,7 +5,7 @@ class RegisterForm extends Component {
     render() {
         return (
 
-            <div className='register'>
+            <section className='register'>
                 <form onSubmit={this.handleSubmit}>
                       {/* user field */}
                       <div className='form-group'>
@@ -59,7 +59,7 @@ class RegisterForm extends Component {
                     </div>
 
                 </form>
-            </div>
+            </section>
         )
     }
 }
