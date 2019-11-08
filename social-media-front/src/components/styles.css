@@ -9,7 +9,7 @@ figure {
 }
 
 button {
-    padding: 0.3rem 0.5rem;
+    padding: 1rem;
     border: none;
     border-radius: 0.5rem;
     color: white;
@@ -39,7 +39,21 @@ button {
     border: none;
 }
 
+#register {
+    width: 70%;
+    margin: 1rem auto;
+    height: auto;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 10px 10px 5px -1px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 10px 10px 5px -1px rgba(0, 0, 0, 0.12);
+    box-shadow: 10px 10px 5px -1px rgba(0, 0, 0, 0.12);
+}
+
 @media only screen and (min-width: 576px) {
+    #register {
+        width: 50%;
+    }
     #login {
         width: 50vw;
     }
@@ -47,6 +61,7 @@ button {
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
+        align-items: center;
     }
     #login form input {
         margin-right: 1rem;
