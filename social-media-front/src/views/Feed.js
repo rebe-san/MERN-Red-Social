@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 
 import NewPost from '../components/newPost/index';
+import Navbar from '../components/navbar/index';
 
-class Login extends Component {
+class Feed extends Component {
     render() {
         return (
             <React.Fragment>
-                  <NewPost />
+                <Navbar/>
+                <NewPost />
             </React.Fragment>
         );
     }
 }
 
-export default Login
+export default Feed
