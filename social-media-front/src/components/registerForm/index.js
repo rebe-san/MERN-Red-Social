@@ -6,7 +6,8 @@ class RegisterForm extends Component {
     render() {
         return (
 
-            <section className='register'>
+            <section id='register'>
+                <h2>Registro</h2>
                 <form onSubmit={this.handleSubmit}>
                       {/* user field */}
                       <div className='form-group'>

@@ -6,7 +6,7 @@ class LoginButton extends Component {
     render() {
         return (
             <label>
-                <button type="submit">Inicia sesión</button>    
+                <button type="submit" id="button-login" >Inicia sesión</button>    
             </label> 
         )
     }
