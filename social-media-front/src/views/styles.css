@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Box sizing*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+#register-page {
+    display: flex;
+}
+
+#all-forms {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#register-page,
+.all-sections {
+    height: auto;
+    background: #b6d0f2;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #b6d0f2 0%, #ffffff 68%, #ffffff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b6d0f2 0%, #ffffff 68%, #ffffff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #b6d0f2 0%, #ffffff 68%, #ffffff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b6d0f2', endColorstr='#ffffff', GradientType=0);
+    /* IE6-9 */
+    background-attachment: fixed;
+}
+
+.all-sections {
+    width: 100vw;
+    height: 100vh;
+    padding: 0.5rem 0;
+}
+
+#img-register-page {
+    display: flex;
+    background-image: url('../assets/img/orange-register.jpg');
+    background-size: cover;
+}
+
+@media only screen and (min-width: 576px) {
+    #img-register-page {
+        justify-content: flex-start;
+        width: 50vw;
+        height: 100vh;
+    }
+}

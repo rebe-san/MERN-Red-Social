@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'; 
+import '../styles.css';
 
 
 class RegisterForm extends Component {
@@ -9,8 +10,8 @@ class RegisterForm extends Component {
                 <form onSubmit={this.handleSubmit}>
                       {/* user field */}
                       <div className='form-group'>
-                      <label for="user" className="col-sm-2 col-form-label">Usuario</label>
-                        <input required
+                      <label className="col-sm-2 col-form-label">Usuario
+                      <input required
                             type='text'
                             placeholder='Usuario'
                             name='user'
@@ -18,11 +19,13 @@ class RegisterForm extends Component {
                             // value={this.state.user}
                             onChange={this.handleChange}
                         />
+                      </label>
+                        
                     </div>
                     {/* email field */}
                     <div className='form-group'>
-                    <label for="email" className="col-sm-2 col-form-label">Email</label>
-                        <input required
+                    <label className="col-sm-2 col-form-label">Email
+                    <input required
                             type='email'
                             placeholder='Email'
                             name='email'
@@ -30,12 +33,14 @@ class RegisterForm extends Component {
                             // value={this.state.user}
                             onChange={this.handleChange}
                         />
+                    </label>
+                        
                     </div>
 
                     {/* password field */}
                     <div className='form-group'>
-                    <label className="col-sm-2 col-form-label" for="password">Contraseña</label>
-                        <input required
+                    <label className="col-sm-2 col-form-label" >Contraseña
+                    <input required
                             type='password'
                             placeholder='Contraseña'
                             name='password'
@@ -43,12 +48,14 @@ class RegisterForm extends Component {
                             // value={this.state.user}
                             onChange={this.handleChange}
                         />
+                    </label>
+                        
                     </div>
 
                      {/* confirm-password field */}
                      <div className='form-group'>
-                     <label className="col-sm-2 col-form-label" for="confirm-password">Confirmar contraseña</label>
-                        <input required
+                     <label className="col-sm-2 col-form-label">Confirmar contraseña
+                     <input required
                             type='password'
                             placeholder='Confirmar contraseña'
                             name='confirm-password'
@@ -56,6 +63,8 @@ class RegisterForm extends Component {
                             // value={this.state.user}
                             onChange={this.handleChange}
                         />
+                     </label>
+                        
                     </div>
 
                 </form>

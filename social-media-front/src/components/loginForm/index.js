@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import LoginButton from '../btn/btn-login';
+import '../styles.css';
 
 
 class LoginForm extends Component {
     render() {
         return (
 
-            <section className='login'>
+            <section id='login'>
                 <form onSubmit={this.handleSubmit}>
-                    {/* email field */}
-                    <div className='form-group'>
+                    <label>
                         <input required
                             type='email'
                             placeholder='Email'
@@ -17,11 +18,9 @@ class LoginForm extends Component {
                             // value={this.state.user}
                             onChange={this.handleChange}
                         />
-                    </div>
-
-                    {/* password field */}
-                    <div className='form-group'>
-                        <input required
+                    </label>
+                    <label>
+                    <input required
                             type='password'
                             placeholder='Contraseña'
                             name='password-login'
@@ -29,8 +28,8 @@ class LoginForm extends Component {
                             // value={this.state.user}
                             onChange={this.handleChange}
                         />
-                    </div>
-
+                    </label>
+                    <LoginButton />                       
                 </form>
             </section>
         )
